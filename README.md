@@ -9,6 +9,7 @@ Jeg startede med at undersøge forskellige løsninger. Selvom jeg har erfaring m
 Jeg håber, at resultatet stemmer overens med jeres forventninger i forhold til det den mockup i har givet.
 
 Med venlig hilsen
+
 Oliver Alex Kruse Schjelde
 
 ## Implementerede funktioner efter opgavebeskrivelsen
