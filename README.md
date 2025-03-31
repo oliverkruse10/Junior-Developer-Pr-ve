@@ -4,9 +4,11 @@ Hej ShopHelten,
 
 Jeg har hermed løst jeres opgave som beskrevet.
 
-Jeg startede med at undersøge forskellige løsninger. Selvom jeg har erfaring med React, valgte jeg i denne opgave at holde mig til HTML, CSS og JavaScript, da det eksisterende projekt allerede er bygget op omkring dem.
+Jeg startede med at undersøge forskellige løsninger. Selvom jeg har erfaring med React, Tailwind, valgte jeg i denne opgave at holde mig til HTML, CSS og JavaScript, da det eksisterende projekt allerede er bygget op omkring dem. Var det et større projekt, kunne man sagtens gå vejen med React, Angular eller andre. 
 
-Jeg håber, at resultatet stemmer overens med jeres forventninger i forhold til det den mockup i har givet.
+Umildbart fulgte jeg opgaven, uden at lave for mange kreative ændringer, men tillod mig alligevel at blive lidt kreativ i den sidste opgave omkring nedtælling. Jeg lavede den dynamisk omkring tidspunktet på ugen/dagen for at simulere en typisk workshop.   
+
+Jeg håber, at resultatet stemmer overens med jeres forventninger i forhold til den mockup i har givet.
 
 Med venlig hilsen
 
@@ -16,12 +18,13 @@ Oliver Alex Kruse Schjelde
 
 ### Features Sektion
 - Responsiv sektion med tre kolonner implementeret med CSS Grid
+- Media query i CSS til at løse opgaven med kun at stable dem lodret på mobil
 - Guld farvetema (#C5A572) med mørk baggrund (#1C1C1C)
-- Guld ramme omkring hele sektionen
-- SVG ikoner i guld farve med grid, stjerne og leveringsmotiver
+- Guld ramme omkring hele sektionen jævnfør mockup
+- SVG ikoner i guld farve med grid. Ikke direkte kopi af mockup, men motiverne forstiller det samme.
 
 ### Animationer
-- Fade-in animation for hver kolonne med forskudt timing
+- Fade-in animation for hver kolonne. Er lavet med forskudt timing for at give det en effekt af at de kommer forskudt. 
 - Hover effekter på ikoner:
 - Smooth transitions på alle interaktive elementer
 
