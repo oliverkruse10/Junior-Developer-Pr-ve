@@ -34,8 +34,70 @@
 
 <!-- Indsæt din løsning herunder -->
 
+<section id="features" class="features-section">
+    <div class="container">
+        <div class="features-grid">
+            <!-- Feature 1: Dansk design -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="assets/icons/dansk-design-icon.svg" alt="Dansk design ikon">
+                </div>
+                <h3>Dansk design</h3>
+                <p>Virksomheden er dansk design i højeste kvalitet til din virksomhed.</p>
+            </div>
 
+            <!-- Feature 2: TrustScore -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="assets/icons/trustscore-icon.svg" alt="TrustScore ikon">
+                </div>
+                <h3>Fremragende TrustScore</h3>
+                <p>Vores kunder vurderer os til fremragende.</p>
+            </div>
 
+            <!-- Feature 3: Hurtig levering -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="assets/icons/delivery-icon.svg" alt="Levering ikon">
+                </div>
+                <h3>Hurtig levering</h3>
+                <p>Vi leverer din ordre med GLS, så du hurtigt og sikkert kan modtage din pakke fra os.</p>
+                <!-- Knap der åbner en pop-up med mere info -->
+                <button class="cta-button delivery-info-btn">Læs mere</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="deliveryModal" class="modal">
+    <div class="modal-content">
+        <!-- Luk-knap til pop-up -->
+        <span class="close-modal">&times;</span>
+        
+        <!-- Overskrift i pop-up -->
+        <h2>Hurtig levering 🚀</h2>
+        
+        <div class="modal-body">
+            <!-- Kort beskrivelse -->
+            <p>Vi sender lynhurtigt, så du får dine varer uden unødig ventetid! 📦✨</p>
+            
+            <!-- Liste med vigtige leveringsfordele -->
+            <ul>
+                <li>✔ Fri fragt ved køb over 999,95,-</li>
+                <li>✔ 30 dages returret – så du kan handle trygt 🛍️</li>
+            </ul>
+
+            <!-- Nedtælling til dagens sidste forsendelse -->
+            <div class="delivery-note">
+                <div id="countdownContainer">
+                    <p>Tid tilbage i dag: <span id="countdownTimer" class="countdown">--:--:--</span></p>
+                    <p id="deliveryMessage">Bestil inden kl 15, og så sender vi dine vare afsted allerede i dag 🚚</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Indsæt din løsning herover -->

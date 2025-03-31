@@ -161,28 +161,95 @@ section {
 }
 
 /* Features section */
+.features-section {
+    background-color: #1C1C1C;
+    padding: 80px 0;
+    color: #fff;
+    border: 2px solid #C5A572;
+}
+
+.features-section .container {
+    padding: 40px 20px;
+}
+
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .feature-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Forsink animationen forskelligt for hvert kort */
+.feature-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .feature-icon {
-    font-size: 36px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.feature-icon img {
+    width: 48px;
+    height: 48px;
 }
 
 .feature-card h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.feature-card .cta-button {
+    margin-top: 20px;
+    background-color: #C5A572;
+    transition: all 0.3s ease;
+}
+
+.feature-card .cta-button:hover {
+    background-color: #b08d5a;
+    transform: translateY(-2px);
 }
 
 /* Pricing section */
@@ -377,4 +444,111 @@ footer .container {
     .footer-links a {
         margin: 0 10px;
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .feature-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #1C1C1C;
+    color: white;
+    margin: 15% auto;
+    padding: 30px;
+    border: 2px solid #C5A572;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    animation: modalOpen 0.3s ease-out;
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #C5A572;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #b08d5a;
+}
+
+.modal h2 {
+    color: #C5A572;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.modal-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.modal-body ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.modal-body li {
+    margin: 10px 0;
+}
+
+.delivery-note {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #C5A572;
+    color: #C5A572;
+    font-weight: 500;
+}
+
+#countdownContainer {
+    text-align: center;
+}
+
+.countdown {
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(197, 165, 114, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+
+#deliveryMessage {
+    margin-top: 10px;
 }
